@@ -7,7 +7,6 @@ const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 50px;
   position: sticky;
   top:0;
   background-color : white;
@@ -24,13 +23,21 @@ const HeaderContainer = styled.header`
   >div{
     text-align: right;
     padding-right: 50px;
+    margin-bottom: 30px;
     box-sizing: border-box;
     >a>.btns{
-    margin : 10px;
-    padding : 5px;
+    margin : 5px;
+    padding : 5px 10px;
     border:none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #cddeef;
+    color : #62717e;
+    font-size: 15px;
+    font-weight : 700;
+    &:hover{
+    background-color: #becddb;
+    }
     }
   }
 `

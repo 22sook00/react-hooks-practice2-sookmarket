@@ -12,14 +12,11 @@ const App = () => {
   const [cartItem,setCartItem] = useState([]);
 
   const handleClick = (e,select) => {
-    //cartItem 에 이미 아이템이 있다면 카운트 하지 않고, 없다면 카운트해라.
+
     const filtering = cartItem.filter((el)=>select.id === el.id)[0];
     if(filtering){
-      //중복되는게 있을때 : 카트아이템의 i 번째의 cartCounting 에만 카트카운팅 적용하게.
-      //console.log(filtering.cartCount++)
       filtering.cartCount++;
     }else{
-      //중복되는게 없을때
       setCount(count+1)
       setCartItem(cartItem.concat([select]))
     }
@@ -56,6 +53,7 @@ const App = () => {
     setCount(0);
     setCartItem([])
   }
+
   return <div id = 'container'>
 
     <BrowserRouter>

@@ -12,15 +12,15 @@ const itemList = [
   {
     id : 2,
     img : 'img/bedcover1.png', 
-    title : '이불 커버 - 그린',
-    description : '눕고싶은은 색깔',
+    title : '이불 커버 - 라이트 그린',
+    description : '유행타지 않는 라이트그린 컬러',
     price : 23000,
     cartCount : 1
   },
   {
     id : 3,
     img : 'img/bedcover2.png', 
-    title : '이불 커버 - 핑크',
+    title : '이불 커버 - 라이트 핑크',
     description : '담요로 활용 가능한 이불커버',
     price : 18000,
     cartCount : 1
